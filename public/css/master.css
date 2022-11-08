@@ -1,0 +1,24 @@
+.navbar{
+    background-color: rgb(175, 170, 170) !important;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+
+}
+.fa-search{
+    font-size: 2.3rem;
+    background-color: rgb(175, 170, 170);
+    border-radius: 10%;
+}
+body{
+    min-height: 100vh;
+}
+.footer{
+    background-color: rgb(175, 170, 170);
+}
+.mt-100{
+    margin-top: 100px;
+}
+.shadowL{
+    display: none;
+}

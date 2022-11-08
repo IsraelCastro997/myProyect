@@ -1,0 +1,63 @@
+    .image{
+    height: 300px !important;
+    object-fit: cover;
+    margin: 30px auto;
+    display: block;
+    }
+
+    .image:hover{
+        width: 150%;
+        opacity: .6;
+    }
+    .modalP:target{
+        clip-path: circle(150% at top right);
+        transition: clip-path 2s 1s;
+    }
+
+    .modalP{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0, 0.548);
+        clip-path: circle(0% at top right);
+        transition: clip-path 2s;
+        z-index: 9999;
+    }
+
+    .modalP:target .modal_picture{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: clip-path .5s;
+    }
+
+    .modal_picture{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        clip-path: polygon(100% 0, 100% 0,100% 0, 100% 0);
+        transition: clip-path .5s 2s;
+    }
+
+    .modal_img{
+        margin-top: 7vw;
+        height: 350px;
+        /* object-fit: cover; */
+    }
+
+    .modalP_close{
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        background-color: gray;
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        position: absolute;
+        top: 7vw;
+        right: 0;
+        text-decoration: none;
+        border-radius: 50%;
+    }
